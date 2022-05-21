@@ -1,0 +1,103 @@
+html {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Nunito Sans", "Arial", sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.material-icons {
+    position: relative;
+    top: 5px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    background-color: white;
+}
+
+nav ul {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    background-color:whitesmoke;
+    color:#2C497F ;
+    max-height: 30%;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.filter {
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+.filter::-webkit-scrollbar { width: 0 !important }
+
+.vis img {
+    height: 100%;
+    width: 100%;
+}
+
+.filterInner {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+
+@media (min-width: 800px) {
+
+    .container {
+        flex-direction: row;
+    }
+
+    .filters {
+        width: 20%;
+        max-height: 100%;
+    }
+
+    .filter {
+        height: 100%
+    }
+
+    .vis {
+        width: 70%;
+        height: 100%;
+    }
+}

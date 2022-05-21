@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    background: rgba(215, 255, 151, 0.774);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    font-family: "Nunito Sans", "Arial", sans-serif;
+}
+
+button {
+    position:fixed;
+    top: 50%;
+    left: 96%;
+    background-color: rgba(247, 104, 235, 0.774);
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: rgba(253, 14, 233, 0.774);
+}
+
+
+.wrapper {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25rem;
+}
+
+.question-container {
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.option-container {
+    text-align: center;
+}
+
+.select-box {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="radio"]{
+    margin-top: 10px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: white;
+}
+
+nav ul {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 1200px) {
+    button {
+        position:fixed;
+        top: 50%;
+        left: 90%;
+        background-color: rgba(247, 104, 235, 0.774);
+        border-radius: 5px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        
+    }
+}
+
+@media (max-width: 2040px) and (min-width: 1200px) {
+    button {
+        position:fixed;
+        top: 50%;
+        left: 94%;
+        background-color: rgba(247, 104, 235, 0.774);
+        border-radius: 5px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        
+    }
+}
