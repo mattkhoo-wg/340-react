@@ -2,7 +2,7 @@ import React from 'react';
 import SurveyQuestion from './SurveyQuestion'
 import Result from './Result'
 
-function AppSurvey() {
+export function AppSurvey() {
     // Selection is the array of responses the user picked: ['response 1', 'response 2', ...]
     // Instead of having: let selection = [] and updating selection as so: selection[idx] = 'updated value'
     // We use setSelection(['new response 1', 'response 2', ...])

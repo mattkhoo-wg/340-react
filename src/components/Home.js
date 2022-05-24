@@ -2,6 +2,7 @@ import React from 'react';
 import { NavBar } from './Navigation';
 import { useNavigate } from 'react-router-dom'
 import AppSurvey from './AppSurvey'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import '../css/landingPage.css';
 
@@ -30,7 +31,7 @@ export function Home() {
                         <h2 class="clean">
                             An insight into your carbon footprint.
                         </h2>
-                        <a href="questionnaire.html"><button type="button">Start Survey</button></a>
+                        <Link to="/AppSurvey"><button type="button">Start Survey</button></Link>
 
                         <div id="about">
                             <h2>
