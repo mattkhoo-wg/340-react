@@ -4,6 +4,10 @@ html {
     max-height: 100%;
 }
 
+h2 {
+    margin-top: 0;
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -64,6 +68,7 @@ nav a {
 
 .filter {
     padding: 1rem;
+    padding-top: 0;
     overflow-y: scroll;
 }
 
@@ -76,8 +81,10 @@ nav a {
 
 .filterInner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1rem;
+    padding-left: 0;
+    flex-direction: column;
 }
 
 
