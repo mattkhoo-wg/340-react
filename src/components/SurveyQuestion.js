@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/questionPage.css'
 
 function SurveyQuestion(props) {
     
@@ -11,21 +12,23 @@ function SurveyQuestion(props) {
 
 
     return (
-    <div class="content">
-            <div class="question-container">
-                <h1>{props.surveyTitle}</h1>
-            </div>
+    <html>   
+        <div className="content">
+                <div className="question-title">
+                    <h1>{props.surveyTitle}</h1>
+                </div>
 
-            <div class="option" onChange={onChangeValue}> 
-                {props.surveyOptions.map((option, idx) => {
-                    return <>
-                        <input type="radio" value = {option} class="radio" name={props.surveyTitle} />
-                        <label>{option}</label><br/>
-                    </>
-                })}
-            
-            </div>
-    </div>
+                <div className="option" onChange={onChangeValue}> 
+                    {props.surveyOptions.map((option, idx) => {
+                        return <>
+                            <input type="radio" value = {option} class="radio" name={props.surveyTitle} />
+                            <label>{option}</label><br/>
+                        </>
+                    })}
+                
+                </div>
+        </div>
+    </html> 
     )
 }
 

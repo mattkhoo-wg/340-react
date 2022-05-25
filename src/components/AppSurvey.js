@@ -1,6 +1,8 @@
 import React from 'react';
 import SurveyQuestion from './SurveyQuestion'
 import Result from './Result'
+import { NavBar } from './Navigation';
+import '../css/questionPage.css'
 
 export function AppSurvey() {
     // Selection is the array of responses the user picked: ['response 1', 'response 2', ...]
@@ -27,9 +29,12 @@ export function AppSurvey() {
 
     return (
         <>
+            <NavBar />
             <SurveyQuestion surveyTitle={titles[curSurveyNum]} surveyOptions={ops[curSurveyNum]} curSurveyNum={curSurveyNum} selection={selection} setSelection={setSelection}/>
-            <button onClick={prevPage}>back</button>
-            <button onClick={nextPage}>next</button>
+            <div className="button">
+                <button className="back" onClick={prevPage}>back</button>
+                <button className="next" onClick={nextPage}>next</button>
+            </div>
             <Result surveyAnswer={selection[curSurveyNum-1]} surveyTitle={titles[curSurveyNum]}/>
         </>
         )

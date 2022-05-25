@@ -28,10 +28,11 @@ export function Home() {
                         <h1>
                             How much waste are you generating?
                         </h1>
-                        <h2 class="clean">
+                        <h2 className="clean">
                             An insight into your carbon footprint.
                         </h2>
-                        <Link to="/AppSurvey"><button type="button">Start Survey</button></Link>
+                        
+                        <Link to="/AppSurvey"><button className="landing-page" type="button">Start Survey</button></Link>
 
                         <div id="about">
                             <h2>
@@ -52,10 +53,6 @@ export function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div>
-                <AppSurvey/>
             </div>
         </div>
     )
