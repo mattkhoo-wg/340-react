@@ -5,9 +5,23 @@ import { Data } from './Data';
 import { AppSurvey } from './AppSurvey';
 import SignInPage from './SignInPage';
 
+import { getAuth, onAuthStateChanged } from 'firebase/auth'
+
 function App() {
     const initialUser = {userId:null, userName:null}
-    const [currentUser, setCurrentUser] = useState(initialUser);
+    const [currentUser, setCurrentUser] = useState(initialUser); //use this to grab data and push data related to the user
+
+const auth = getAuth()
+onAuthStateChanged(auth, (firebaseUser) => {
+    if (firebaseUser) {
+        console.log(firebaseUser);
+        firebaseUser.userId = firebaseUser.uid;
+        firebaseUser.userName = firebaseUser.displayName;
+        setCurrentUser(firebaseUser);
+    } else {
+        serCurrentUser(nullUser);
+    }
+});
 
     return (
         <Router>
