@@ -4,6 +4,7 @@ import Result from './Result'
 import { NavBar } from './Navigation';
 import '../css/questionPage.css'
 
+
 export function AppSurvey() {
     // Selection is the array of responses the user picked: ['response 1', 'response 2', ...]
     // Instead of having: let selection = [] and updating selection as so: selection[idx] = 'updated value'
