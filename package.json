@@ -7,8 +7,11 @@
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.0-beta1",
+    "chart.js": "^3.8.0",
+    "faker": "^6.6.6",
     "firebase": "^9.8.2",
     "react": "^18.1.0",
+    "react-chartjs-2": "^4.1.0",
     "react-dom": "^18.1.0",
     "react-firebaseui": "https://gitpkg.now.sh/gvillenave/firebaseui-web-react/dist",
     "react-router-dom": "^6.3.0",
@@ -38,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.2.0"
   }
 }

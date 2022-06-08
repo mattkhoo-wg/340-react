@@ -7,7 +7,7 @@ export function NavBar() {
         <nav>
             <li><Link to="/"><span className="material-icons" aria-label="Home">home</span></Link></li>
             <li><Link to="/#about">About Us</Link></li>
-            <li><Link to="/data">Data</Link></li>
+            <li><Link to="/data">Explore Data</Link></li>
         </nav>
     )
 }

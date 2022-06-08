@@ -4,8 +4,22 @@ html {
     max-height: 100%;
 }
 
-h2 {
+button {
+    margin-top: 1rem;
+    display: flex;
+    margin: auto;
+    background-color:rgb(67, 67, 221) ;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    border: 3px solid white;
+    font-size: 0.8rem;
+    margin-bottom: 27vh;
+}
+
+.filter h2 {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 body {
@@ -53,7 +67,14 @@ nav a {
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin-top: 2rem;
+    margin-top: 1.2rem;
+}
+.filterContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .filters {
@@ -67,17 +88,13 @@ nav a {
 }
 
 .filter {
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
     padding-top: 0;
-    overflow-y: scroll;
 }
 
 .filter::-webkit-scrollbar { width: 0 !important }
 
-.vis img {
-    height: 100%;
-    width: 100%;
-}
 
 .filterInner {
     display: flex;
@@ -104,6 +121,7 @@ nav a {
     }
 
     .vis {
+        padding-top: 5vh;
         width: 70%;
         height: 100%;
     }

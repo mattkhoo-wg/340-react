@@ -1,5 +1,5 @@
 import React, { useState } from 'react'; 
-import Dropdown from 'react-bootstrap/Dropdown'; 
+// import Dropdown from 'react-bootstrap/Dropdown'; 
 import { NavLink, Link } from 'react-router-dom'; 
 
 import { StyledFirebaseAuth } from 'react-firebaseui'
@@ -26,7 +26,7 @@ export default function SignInPage(props) {
                 <p className="lead">pick a user:</p>
 
                 <StyledFirebaseAuth uiConfig={FIREBASEUI_CONFIG} firebaseAuth={auth} />
-                
+
             </div>
         </div>
     )
