@@ -3,9 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Link, Outlet, Navigate } from '
 import {Home} from './Home';
 import { Data } from './Data';
 import { AppSurvey } from './AppSurvey';
-import SignInPage from './SignInPage';
-
-import { getAuth, onAuthStateChanged } from 'firebase/auth'
+import { Username } from './Username';
+import Result from './Result';
 
 function App() {
 
@@ -14,7 +13,9 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/Data" element={<Data/>}/>
+                <Route path="/Username" element={<Username/>}/>
                 <Route path="/AppSurvey" element={<AppSurvey/>}/>
+                <Route path="/Result" element={<Result/>}/>
             </Routes>
         </Router>
     )

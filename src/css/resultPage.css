@@ -1,0 +1,15 @@
+div.content{
+    position: relative;
+    flex-flow: column wrap;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+li{
+    font-size: large;
+}
+
+li:last-child{
+    display: none;
+}

@@ -8,12 +8,12 @@ import '../css/landingPage.css';
 
 export function Home() {
     
-    let navigate = useNavigate(); 
-    
-    const routeChange = () =>{ 
-        let path = `/AppSurvey`; 
-        navigate(path);
+    const navigate = useNavigate();
+
+    const navigateToResults = () => {
+        navigate('/Username')
     }
+
 
     return (
         <div>
@@ -32,7 +32,7 @@ export function Home() {
                             An insight into your carbon footprint.
                         </h2>
                         
-                        <Link to="/AppSurvey"><button className="landing-page" type="button">Start Survey</button></Link>
+                        <button className="landing-page" type="button" onClick={navigateToResults}>Start Survey</button>
 
                         <div id="about">
                             <h2>
