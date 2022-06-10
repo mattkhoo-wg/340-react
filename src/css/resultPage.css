@@ -10,6 +10,6 @@ li{
     font-size: large;
 }
 
-li:last-child{
+li.result:last-child{
     display: none;
 }

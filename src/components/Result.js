@@ -45,7 +45,7 @@ export default function Result(props){
                 <button className="back" onClick={clickUpdate}>See Result!</button>
                 <ol>
                     {userList.map(item =>{
-                        return <li key={item}>{item}</li>;
+                        return <li className='result' key={item}>{item}</li>;
                     })}
                 </ol>
             </div>

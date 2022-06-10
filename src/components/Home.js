@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import '../css/landingPage.css';
 
 export function Home() {
-    
+
     const navigate = useNavigate();
 
     const navigateToResults = () => {
